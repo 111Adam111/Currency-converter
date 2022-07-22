@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="blackboard">
+            <div class="title">
+                <p>Currency calculator</p>
+            </div>
+            <div class="container">
+                <div class="currency">
+                    <div class="drop-list">
+                        <select name="currencies" id="from">
+                            <option selected value="PLN">PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CHF">CHF</option>
+                        </select>
+                    </div>
+                    <div class="drop-list">
+                        <select name="currencies" id="to">
+                            <option value="PLN">PLN</option>
+                            <option selected value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CHF">CHF</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="amount-box">
+                    <input class="amount" type="number" name="amount" id="amount" placeholder="Amount" autocomplete="off">
+                </div>
+                <div class="buttons-box">
+                    <div class="btn-container">
+                        <button onclick="getRates()" class="btn">Submit</button>
+                    </div>
+                    <div class="btn-container right">
+                        <button onclick="clearButton()" class="btn">Clear</button>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="output">
+                <div><p id="result"></p></div>
+                <div><p id="rate"></p></div>
+                <div class="space"></div>
+                <div><p id="time-date"></p></div>      
+            </div>
+
+        
+        </div> 
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
