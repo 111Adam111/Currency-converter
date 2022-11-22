@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">        
+        <div class="mainBox">
+            <div class="top"></div>
+            <div class="inputBox">
+                <input type="number" placeholder="Amount" id="amount">
+            </div>
+            <div class="textFromBox">
+                <div class="textFromConteiner">
+                    <p class="textFrom"></p>
+
+                </div>
+
+            </div>
+            
+            <div class="selectorBoxFrom">
+                <div class="selectorFrom">
+                    <div class="selectFieldFrom">
+                        <div class="choiceBoxFrom">From</div>
+
+
+                        <div id="arrowFrom">
+                            <img src="drop-down-arrow.png">
+
+                        </div>
+                    </div>
+                    <ul id="listFrom" class="hide"> 
+                        
+                        <!-- javascript injected list -->
+
+                    </ul>
+                </div>
+            </div>
+            <div class="textToBox">
+                <div class="textToConteiner">
+
+                    <p class="textTo"></p>
+                </div>
+            </div>           
+            <div class="selectorBoxTo ">
+                <div class="selectorTo">
+
+                    <div id="selectFieldTo">
+                        
+                        <div class="choiceBoxTo">
+                            To
+                             
+                           
+                        </div>
+                        
+                        <div id="arrowTo">
+                            <img src="drop-down-arrow.png">
+                        </div>
+                    </div>
+                    <ul id="listTo" class="hide">
+
+                        <!-- javascript injected list -->
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="earlyResultBox">
+                <div class="earlyResultConteiner">
+                    <p id="earlyResultsLeft"></p>
+                    <p id="earlyResultsRight"></p>
+                </div>
+                
+            </div>
+            <div class="btnBox">
+                <button id="btn">Convert</button>
+            </div>
+            <div class="resultContainer">
+                <div class="resultBox">
+
+                    <div class="resultBoxOne">
+
+                        <p id="result">
+                                
+                        </p>
+                    </div>
+                    <div class="resultBoxTwo">
+
+                        <p id="resultTwo">
+                            
+                        </p>
+                    </div>
+                    <div class="resultBoxThree">
+                        <p id="resultThree">
+                            
+                        </p>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
