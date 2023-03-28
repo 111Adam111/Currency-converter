@@ -170,7 +170,6 @@ let dropDownList = {
     textTo: document.querySelector('.textTo'),
     listFrom: document.querySelector('#listFrom'),
     listTo: document.querySelector('#listTo'),
-    // options: document.querySelector(".options"),
     selectFieldFrom: document.querySelector('.selectFieldFrom'),
     selectFieldTo: document.querySelector('#selectFieldTo'),
     choiceBoxFrom: document.querySelector(".choiceBoxFrom"),
@@ -302,7 +301,6 @@ let main = {
         let displayResultTwo = document.querySelector('#resultTwo');
         let displayResultThree = document.querySelector('#resultThree');
         result = outputRate * inputBox.value
-        console.log(this.results.length)
         let displayString = `${result.toFixed(2)} ${dropDownList.chosenTo}`
         this.results.unshift(displayString);
         displayResult.innerHTML = this.results[0] ? this.results[0] : "";
@@ -322,80 +320,3 @@ function earlyOutput() {
 
 dropDownList.createFrom()
 dropDownList.createTo()
-
-
-// inputBox.addEventListener('keypress', keyPress);
-
-// const btn = document.querySelector('#btn')
-//     .addEventListener("click", () => {
-//         getRates()
-// }, false);
-
-// function keyPress(enter) {
-//     if (enter.keyCode == 13) {
-//         getRates();            
-//     }
-// }
-// function earlyCalc(){
-//     if (dropDownList.chosenFrom && dropDownList.chosenTo){
-//         // getRates()
-//     }
-// }
-
-
-// for (let i = 0; i <options.length;i++) {
-//     if (xd > 0) {
-//         options[i].classList.add(".everyOther")
-//         console.log(options[i])
-//     }
-// }
-
-    // createFrom() {
-    //     for (let i = 0; i < this.currencies.length; i++) {
-    //         let everyOther = i % 2 == 0 ? "" : "everyOther";
-    //         this.listStringFrom += 
-    //         `<li class="options ${everyOther}"
-    //         onClick="dropDownList.choiceFrom('${this.currencies[i].isoCode}')">
-    //         <p>${this.currencies[i].isoCode}</p>
-    //         <p>${this.currencies[i].name}</p>
-    //         <img src="flags/${this.currencies[i].country}.png">
-    //         </li>`
-    //     }
-    //     return this.listFrom.innerHTML = this.listStringFrom, console.log(this.listStringFrom)
-    // },
-
-
-
-
-
-
-
-    
-// Creating conventional date format from timestamp
-// function formatTime(timeStamp) {  
-//     let date = new Date(timeStamp * 1000);
-//     let hours = date.getHours() - 2;
-//     let minutes = '0' + date.getMinutes();
-//     let seconds = '0' + date.getSeconds();
-//     let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-//     return formattedTime;
-// }
-
-// Switching date to day-month-year format
-// function formatDate(switchedDate) {
-//     let parts = switchedDate.split('-');
-//     return `${parts[2]}-${parts[1]}-${parts[0]}`
-// }   
-// function reset() {
-//     inputBox.value = null;
-//     location.reload();
-
-// }
-
-
-
-    // let displayRate = document.querySelector('#rate');
-    // displayRate.innerHTML = `rate: ${rate.toFixed(5)}`;
-    // let displayDate = document.querySelector('#time-date');
-    // displayDate.innerHTML = `Rate updated at: ${formatTime(rawData.timestamp)} UTC ${formatDate(rawData.date)}`;
-   
